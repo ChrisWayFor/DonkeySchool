@@ -1,0 +1,10 @@
+main
+{
+    display: flex;
+}
+
+.name
+{
+    justify-content: center;
+}
+
