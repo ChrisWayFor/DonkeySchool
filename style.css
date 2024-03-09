@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Anta&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Anta&family=Space+Grotesk&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Anta&family=Play:wght@700&family=Space+Grotesk:wght@300..700&display=swap);
 
 html {
     background-color: rgb(49, 49, 49);
@@ -15,6 +16,14 @@ body {
 main {
     margin: 0% 3%;
     background-color: rgb(255, 255, 255);
+}
+
+.pagecomplete {
+    overflow-y: scroll;
+    height: 817px;
+    margin-left: 2%;
+    padding-right: 2%;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,12 +43,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-
 }
 
 .links {
     width: 50%;
-
 }
 
 .links ul {
@@ -56,7 +63,6 @@ nav {
     color: rgb(255, 255, 255);
     font-size: 1.5em;
     cursor: pointer;
-
 }
 
 .links a:hover {}
@@ -66,61 +72,57 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-    height: 780px;
-    margin-left: 2%;
-    padding-right: 2%;
-    overflow-x: hidden;
 }
 
 .logohautgauche {
     display: flex;
-    position: absolute;
-    left: 3vw;
-    width: 30%;
+    position: relative;
+    right: 29vw;
+    width: 35%;
+    top: 2vw;
+    padding: 0 auto;
 }
 
 .logobasdroite {
     display: flex;
     position: relative;
-    top: 64vw;
+    top: 43vw;
     left: 55%;
+    width: 15vw;
+}
 
-
+.logogauche {
+    display: flex;
+    position: relative;
+    top: 9vw;
+    left: 3vw;
+    width: 67vw;
 }
 
 .contenupresentation {
     display: flex;
     text-align: center;
     position: relative;
-
-
+    
 }
 
 .contenupresentation p {
     line-height: 1.4;
-    font-size: 2rem;
+    font-size: 1.6rem;
     position: absolute;
     left: 8vw;
-    top: 3vw;
+    bottom: 10vw;
     width: 45vw;
     font-family: "Space Grotesk", sans-serif;
-
 }
 
 img {
     width: 30%;
-
 }
 
 .icon {
     width: 20%;
 }
-
-h2 {
-    font-size: 2rem;
-}
-
 
 .logoportfolio {
     width: 100%;
@@ -131,10 +133,9 @@ footer {
     right: 0;
     background-color: rgb(49, 49, 49);
     color: #ffffff;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     margin: auto;
-
 }
 
 .photomoi {
@@ -143,7 +144,7 @@ footer {
     border-color: rgb(49, 49, 49);
     box-shadow: 5px 5px 15px rgb(49, 49, 49);
     position: relative;
-    top: 11vw;
+    bottom: 19vw;
     right: 30vw;
     height: 25vw;
     width: 25vw;
@@ -154,57 +155,59 @@ footer {
 #ABOUT {
     position: relative;
     left: 20%;
-    font-size: 300%;
+    font-size: 3rem;
     z-index: 10;
-    font-family: "Anta", sans-serif;
+    font-family: "Play", sans-serif;
+    bottom: 27vw;
+    text-shadow: 5px 5px 100px;
+}
 
+.separation2 {
+    width: 70vw;
+    height: 3px;
+    background-color: black;
+    
 }
 
 .separation {
+    position: relative;
     width: 2px;
-    height: 50vw;
+    height: 16vw;
     background-color: black;
+    top: 1vw;
+    bottom: 10vw;
+}
+
+.separationbis {
+    position: relative;
+    width: 2px;
+    height: 16vw;
+    background-color: black;
+    bottom: 30vw;
 }
 
 .divprojets {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-    height: 780px;
 }
 
 #PROJETS {
     position: relative;
-    font-size: 300%;
-    z-index: 10;
+    font-size: 3rem;
     font-family: "Anta", sans-serif;
+    margin-top: vw;
+    margin-bottom: 10vw;
+    text-shadow: 5px 5px 100px;
 }
 
 .projet1 {
     display: flex;
     flex-direction: column;
-    align-items: cente position: relative;
-    text-align: center;
-
-
-}
-
-.projet1 p {
-    position: absolute;
-    font-family: "Space Grotesk", sans-serif;
-    bottom: 10%;
-    left: 10%;
-    font-size: 200%;
-    line-height: 1.4;
-
+    align-items: center;
 }
 
 .projet1 img {
-    display: flex;
-    position: relative;
-    right: 150%;
-    width: 100%;
-
-
+    width: 30vw;
+    border-radius: 10vw;
 }
