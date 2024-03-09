@@ -84,9 +84,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 30vw;
+    width: 20vw;
     position: relative;
-    left: 60vw;
+    left: 70vw;
+    top: 12vw;
 }
 
 .logogauche {
@@ -94,31 +95,27 @@ nav {
     flex-direction: column;
     width: 80vw;
     position: relative;
-    left: 10vw;
-    top: 10vw;
-
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 80%;
-    width: 100%;
-}
-
-.contenupresentation {
-    width: 100%;
+    left: 12vw;
+    top: 2.5vw;
 }
 
 #ABOUT {
-    left: 20%;
     font-size: 3rem;
-    z-index: 10;
     font-family: "Play", sans-serif;
-    bottom: 27vw;
     text-shadow: 5px 5px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    bottom: 10vw;
+    right: 23%;
+}
+
+.contenupresentation {
+    position: relative;
+    bottom: 70%;
+    width: 100%;
+    display: flex;
 }
 
 .photomoi {
@@ -129,7 +126,10 @@ nav {
     height: 25vw;
     width: 25vw;
     object-fit: cover;
-    left: 3vw
+    position: relative;
+    top: 4vw;
+    left: 2vw;
+
 }
 
 .contenupresentation p {
@@ -137,6 +137,10 @@ nav {
     font-size: 1.6rem;
     width: 45vw;
     font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    position: relative;
+    left: 15%;
+
 }
 
 img {
@@ -144,33 +148,40 @@ img {
 }
 
 .separation {
-
+    height: 10vw;
+    width: 2px;
     background-color: black;
-
+    position: relative;
+    left: 5vw;
+    bottom: 3vw;
 }
 
 .separationbis {
-
+    height: 25vw;
+    width: 2px;
     background-color: black;
+    position: relative;
+    left: 5vw;
+    top: 26vw;
 }
 
 .separation2 {
-    width: 70vw;
-    height: 3px;
+    height: 2px;
+    width: 93%;
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 69%;
+    margin-left: %;
 }
 
--------------------------------------------------------------------------- .divprojets {}
+.divprojets {}
 
 #PROJETS {
-    position: relative;
     font-size: 3rem;
     font-family: "Anta", sans-serif;
-    margin-top: vw;
-    margin-bottom: 10vw;
     text-shadow: 5px 5px 100px;
 }
 
