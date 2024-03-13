@@ -10,73 +10,89 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav>
-                <div class="logoportfolio">
-                    <img src="Logo Portfolio.png">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="#ABOUT">
-                                ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#PROJETS">
-                                PROJETS</a>
-                        </li>
-                        <li>
-                            <a href="ETUDES.html">
-                                ETUDES</a>
-                        </li>
-                        <li>
-                            <a href="CONTACTS.html">
-                                CONTACTS</a>
-                        </li>
-                        <li>
-                            <a href=""><img src="pngfind.com-france-png-2853001.png" alt="logo de la france"></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="pagecomplete">
-            <div class="logohautgauche">
-                <img src="logo haut gauche.png">
+    <header>
+        <nav>
+            <div class="logoportfolio">
+                <img src="Logo Portfolio.png">
             </div>
-            <h2 id="ABOUT">Qui suis-je ?</h2>
-            <div class="logogauche">
-                <img src="logogauche2.png">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#ABOUT">
+                            A PROPOS</a>
+                    </li>
+                    <li>
+                        <a href="#PROJETS">
+                            PROJETS</a>
+                    </li>
+                    <li>
+                        <a href="#ETUDES">
+                            ETUDES</a>
+                    </li>
+                    <li>
+                        <a href="#CONTACTS">
+                            CONTACTS</a>
+                    </li>
+                    <li>
+                        <button id="languagebouton">
+                            <img class="activeflag" id="flagfrance" src="pngfind.com-france-png-2853001.png"
+                                alt="logo de la france">
+                            <img class="hiddenflag" id="flagangleterre" src="pngegg.png" alt="Logo angleterre">
+                        </button>
+                    </li>
+                </ul>
             </div>
-            <div class="logobasdroite">
-                <img src="logobasdroite.png">
-            </div>
-            <div class="contenupresentation">
-                <img src="Moi.jpg" alt="Une photo de moi" class="photomoi">
-                <div class="separation"></div>
-                <div class="separationbis"></div>
-                <p>Bonjour ! Je m'appelle Christopher FARCOZ et j'ai 30 ans.<br>
-                    Actuellement étudiant à l'école "DonkeySchool", à paris 20ème, une école reconnue pour son
-                    approche
-                    pédagogique et innovante, dans laquelle j'étudie différents type de language.<br>
-                    Pour moi, chaque défi est une opportunité de croissance et chaque echec est une leçon à
-                    retenir.<br><br>
-                    Je crois fermement que le developpement est autant une question d'attitude que de compétence, et
-                    je
-                    suis déterminer à exceller dans les deux.<br>
-                    Ce portfolio évoluera en même temps que mon parcours au sein de mon école, et également le long
-                    de
-                    ma carrière.<br><br>
-                    L'objectif, faire part de mes compétences, dont voici un aperçu avec différents projets que
-                    j'étofferais petit à petit.<br><br>
-                    Merci d'être là, je vous souhaite une bonne visite.<br><br><br>
-                </p>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="#ABOUT">A PROPOS</a></li>
+                <li><a href="#PROJETS">PROJETS</a></li>
+                <li><a href="#ETUDES">ETUDES</a></li>
+                <li><a href="#CONTACTS">CONTACTS</a></li>
 
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <img src="CF.png" class="cf">
+    </header>
+    <main>
+        <div class="pagecomplete">
+            <div id="ABOUT" class="contenupresentation">
+                <img src="Moi.jpg" alt="Une photo de moi" class="photomoi">
+                <div class="titreP">
+                    <h2 class="titlepresentation">Qui suis-je ?</h2>
+                    <p>Bonjour ! Je m'appelle Christopher FARCOZ et j'ai 30 ans.<br>
+                        Actuellement étudiant à l'école "DonkeySchool", à paris 20ème, une école reconnue pour son
+                        approche
+                        pédagogique et innovante, dans laquelle j'étudie différents type de language.<br>
+                        Pour moi, chaque défi est une opportunité de croissance et chaque echec est une leçon à
+                        retenir.<br><br>
+                        Je crois fermement que le developpement est autant une question d'attitude que de compétence, et
+                        je
+                        suis déterminer à exceller dans les deux.<br>
+                        Ce portfolio évoluera en même temps que mon parcours au sein de mon école, et également le long
+                        de
+                        ma carrière.<br><br>
+                        L'objectif, faire part de mes compétences, dont voici un aperçu avec différents projets que
+                        j'étofferais petit à petit.<br><br>
+                        Merci d'être là, je vous souhaite une bonne visite.<br><br><br>
+                    </p>
+                </div>
             </div>
-            <div class="separation2"></div>
+            <div class="trait">
+                <img class="directtrait" src="logobasdroite.png">
+                <hr id="PROJETS" class="traithori">
+            </div>
             <div class="divprojets">
-                <h2 id="PROJETS">PROJETS</h2>
+                <h2 class="titleprojet">PROJETS</h2>
                 <div class="toutlesprojets">
                     <article class="projet1">
                         <img src="Miniature projet.png" alt="Photo du projet1">
@@ -92,11 +108,83 @@
                     </article>
                 </div>
             </div>
-            <div class="separation3"></div>
-            <div class="separation4"></div>
+            <div class="trait2">
+                <img class="directtrait2" src="logobasgauche.png">
+                <hr id="ETUDES" class="traithori">
+            </div>
+            <div class="divetudes">
+                <h2 class="titleetudes">ETUDES</h2>
+                <article class="Donckey">
+                    <img src="DonkeySchool logo.png" alt="Photo de l'école Donckeyschool">
+                    <p>Formation de 7 mois au sein de l'école DonckeySchool.<br>
+                        Apprentissage des languages : PHP, TypeScript, JavaScript et MySQL.<br>
+                        Apprentissage des framework : Symfony, AngularJS.<br>
+                        Apprentissage de HTML, de CSS et de GIT.<br>
+                    </p>
+                    <h5>26 Janv. 2024.<br>
+                        6 Nov. 2024.
+                    </h5>
+                </article>
+                <article class="Donckey">
+                    <img src="DonkeySchool logo.png" alt="Photo de l'école Donckeyschool">
+                    <p>Formation de 7 mois au sein de l'école DonckeySchool.<br>
+                        Apprentissage des languages : PHP, TypeScript, JavaScript et MySQL.<br>
+                        Apprentissage des framework : Symfony, AngularJS.<br>
+                        Apprentissage de HTML, de CSS et de GIT.<br>
+                    </p>
+                    <h5>26 Janv. 2024.<br>
+                        6 Nov. 2024.
+                    </h5>
+                </article>
+            </div>
+            <div class="trait3">
+                <img class="directtrait3" src="logobasdroite.png">
+                <hr id="CONTACTS" class="traithori">
+            </div>
+            <h2 class="titlecontact">CONTACTS</h2>
+            <div class="fullcontact">
+                <div class="divcontact">
+                    <div class="gauche">
+                        <h6>CONTACTEZ MOI</h6>
+                        <p>Si vous êtes intéressés par mes compétences ou que vous désirez plus d'informations,<br>
+                            n'hésitez pas à me contacter via les éléments ci-dessous ou bien directement en remplissant
+                            le
+                            formulaire !</p>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/" target="_blank"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                                    alt="icon instagram"></a>
+                            <a href="https://github.com/" target="_blank"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon github"></a>
+                            <a href="https://fr.linkedin.com/" target="_blank"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+                                    alt="icon linkedin"></a>
+                        </div>
+                        <div class="email" >
+                            <img src="logomail.png" alt="logo de mail">
+                            <p >CHRISTOPHER.FARCOZ@GMAIL.COM</p>
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <h6>ENVOYER UN MESSAGE</h6>
+                        <form action="">
+                            <input type="text" name="Nom et prenom" aria-label="Nom et prenom"
+                                placeholder="Nom et prénom">
+                            <input type="text" name="Adresse e-mail" aria-label="Adresse e-mail" placeholder="E-mail">
+                            <textarea type="text" name="Message" aria-label="Message" placeholder="Votre message"
+                                class="message"></textarea>
+                            <button class="button-62" role="button">ENVOYER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <p>© 2024 avec ♥ par Christopher Farcoz</p>
+            </div>
         </div>
-        <footer></footer>
     </main>
+
 </body>
+<script src="js/code.js"></script>
 
 </html>
