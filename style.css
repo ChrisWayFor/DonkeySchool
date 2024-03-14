@@ -141,6 +141,25 @@ nav {
     color: #8fffe1;
 }
 
+.links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #b9e3d8;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.links a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
 .links img {
     width: 3rem;
 }
@@ -481,6 +500,47 @@ img {
     font-size: 1.2rem;
 }
 
+.Donckey2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    color: #ffffff;
+    width: 90%;
+    margin-bottom: 5%;
+    background-color: #ffffff;
+    box-shadow: 15px 15px 15px #b9e3d8;
+    border-top: 2px solid #b9e3d8;
+}
+
+.Donckey2:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.Donckey2 img {
+    width: 22%;
+}
+
+.Donckey2 p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    width: 45vw;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    color: #000000;
+
+}
+
+.Donckey2 h5 {
+    color: #000000;
+    font-family: "Anta", sans-serif;
+    font-size: 1.2rem;
+}
+
 .trait3 {
     display: flex;
     flex-direction: row-reverse;
@@ -768,6 +828,23 @@ textarea::placeholder {
         font-size: 1rem;
     }
 
+    .Donckey2 {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .Donckey2 p {
+        font-size: 1.1rem;
+    }
+
+    .Donckey2 img {
+        width: 20%;
+    }
+
+    .Donckey2 h5 {
+        font-size: 1rem;
+    }
+
     .toutlesprojets {
         font-size: 1.5rem;
     }
@@ -964,6 +1041,33 @@ textarea::placeholder {
         text-align: center;
     }
 
+    .Donckey2 {
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
+    }
+
+    .Donckey2:hover {
+        transform: none;
+    }
+
+    .Donckey2 p {
+        font-size: 1rem;
+        padding-bottom: 4%;
+        width: 90%;
+    }
+
+    .Donckey2 img {
+        padding-bottom: 5%;
+        align-items: center;
+    }
+
+    .Donckey2 h5 {
+        right: 10vh;
+        padding-bottom: 4%;
+        padding-top: 4%;
+        text-align: center;
+    }
+
     nav {
         display: none;
     }
@@ -1132,6 +1236,19 @@ textarea::placeholder {
     }
 
     .Donckey img {
+        width: 40%;
+    }
+
+    .Donckey2 h5 {
+        padding-bottom: 4%;
+        font-size: 0.9em;
+    }
+
+    .Donckey2 {
+        margin-bottom: 20%;
+    }
+
+    .Donckey2 img {
         width: 40%;
     }
 
