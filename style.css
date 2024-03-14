@@ -306,7 +306,7 @@ img {
 .toutlesprojets {
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .projet1 {
@@ -467,7 +467,7 @@ img {
 
 .Donckey p {
     line-height: 1.4;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 45vw;
     font-family: "Space Grotesk", sans-serif;
     text-align: center;
@@ -478,7 +478,7 @@ img {
 .Donckey h5 {
     color: #000000;
     font-family: "Anta", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .trait3 {
@@ -556,9 +556,9 @@ img {
 
 .gauche p {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 1rem;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-size: 1.3rem;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .icon {
@@ -685,11 +685,11 @@ textarea::placeholder {
 .email {
     display: flex;
     align-items: center;
-    gap: 15px;
+
 }
 
 .email img {
-    width: 50px;
+    width: 40px;
 }
 
 .email p {
@@ -844,6 +844,7 @@ textarea::placeholder {
 
     .pagecomplete {
         height: 96vh;
+        margin: 0;
     }
 
     .titlepresentation {
@@ -883,6 +884,10 @@ textarea::placeholder {
         margin-bottom: 10%;
     }
 
+    .projet1 h3 {
+        font-size: 1.6rem;
+    }
+
     .projet1:hover {
         display: none;
     }
@@ -893,6 +898,10 @@ textarea::placeholder {
         box-shadow: none;
     }
 
+    .projet2 h3 {
+        font-size: 1.6rem;
+    }
+
     .projet2:hover {
         display: none;
 
@@ -901,6 +910,10 @@ textarea::placeholder {
     .projet3 {
         width: 60%;
         margin-bottom: 4%;
+    }
+
+    .projet3 h3 {
+        font-size: 1.6rem;
     }
 
     .projet3:hover {
@@ -947,6 +960,7 @@ textarea::placeholder {
     .Donckey h5 {
         right: 10vh;
         padding-bottom: 4%;
+        padding-top: 4%;
         text-align: center;
     }
 
@@ -1200,6 +1214,7 @@ textarea::placeholder {
 }
 
 @media screen and (max-width:320px) {
+
     .email img {
         width: 18px;
     }
@@ -1210,5 +1225,17 @@ textarea::placeholder {
 
     .cf {
         left: 87vw;
+    }
+
+    .droite {
+        width: 100%;
+    }
+
+    .gauche {
+        width: 100%;
+    }
+
+    .divcontact {
+        border-radius: 0px;
     }
 }
