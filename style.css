@@ -1143,16 +1143,20 @@ textarea::placeholder {
     }
 
     .email img {
-        width: 25px;
+        width: 20px;
     }
 
     .email p {
         font-family: "Anta", sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .end {
         height: 9vh;
+    }
+
+    form {
+        gap: 10%;
     }
 
 }
